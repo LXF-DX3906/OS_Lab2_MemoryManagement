@@ -30,7 +30,7 @@ class myWindow(QtWidgets.QMainWindow):
         for i in range(0, 64):
             self.ui.btnGroup[i].clicked.connect(
                 partial(self.addNode, 10*(i+1)))
-        self.isbestFit = False  # 标志是否选择bestFit识别API
+        self.isbestFit = False  # 标志是否选择bestFit识别
         self.workNumber = 0  # 作业个数
         self.nodeList = []  # 结点链表
         # 初始化，将640k视为一个空结点
